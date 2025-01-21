@@ -46,7 +46,7 @@ def main():
 
         print(f"HTML data saved to: {output_file}")
 
-        # 8) Print the first 10 lines to meet assignment requirements
+        # 8) Print the first 10 lines
         print("\nPrinting first 10 lines of web_data.html:\n")
         with open(output_file, "r", encoding="utf-8") as f:
             for i in range(10):
@@ -56,7 +56,7 @@ def main():
                 print(line.rstrip())
 
     finally:
-        # 9) Quit the driver
+        # 9) Quit
         driver.quit()
 
 if __name__ == "__main__":

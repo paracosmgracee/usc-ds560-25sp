@@ -11,6 +11,43 @@ def extract_market_data(soup):
       - MarketCard-symbol
       - MarketCard-stockPosition
       - MarketCard-changesPct
+    
+    Based on the structure:
+        <section class="MarketsBanner--container" id="Homepage_MarketsBanner-1" data-test="marketsBanner-1-0" data-analytics="Homepage-marketsBanner-1-0">
+        <div class="MarketsBannerMenu--marketBannerMenuWrapper">
+        </div>
+
+        <div class="MarketsBanner--main">
+            <div id="market-data-scroll-container" class="MarketsBanner--marketData flex">
+            
+            <!-- Market Card: DJIA -->
+            <a href="//www.cnbc.com/quotes/.DJIA" class="MarketCard-container MarketCard-up MarketCard-wrap">
+                <div class="MarketCard-row flex">
+                <span class="MarketCard-symbol">DJIA</span>
+                <span class="MarketCard-stockPosition">43,487.83</span>
+                </div>
+                <div class="MarketCard-row flex">
+                <!-- Possibly some change data here -->
+                </div>
+                <div class="MarketCard-row flex">
+                <!-- Possibly more info or timestamp -->
+                </div>
+            </a>
+
+            <!-- Market Card: S&P 500 -->
+            <a href="//www.cnbc.com/quotes/.SPX" class="MarketCard-container MarketCard-up MarketCard-wrap">
+                <div class="MarketCard-row flex">
+                <span class="MarketCard-symbol">S&P 500</span>
+                <span class="MarketCard-stockPosition">4,012.32</span>
+                </div>
+                <div class="MarketCard-row flex">
+                <!-- Additional details -->
+                </div>
+            </a>
+
+            </div>
+        </div>
+        </section>
     """
     market_data = []
     try:
@@ -56,14 +93,14 @@ def extract_news_data(soup):
       - link
 
     Based on the structure:
-      <ul class="LatestNews-list">
-        <li class="LatestNews-item">
-          <div class="LatestNews-container">
-            <time class="LatestNews-timestamp">...</time>
-            <a href="..." class="LatestNews-headline">...</a>
-          </div>
-        </li>
-      </ul>
+        <ul class="LatestNews-list">
+            <li class="LatestNews-item">
+            <div class="LatestNews-container">
+                <time class="LatestNews-timestamp">...</time>
+                <a href="..." class="LatestNews-headline">...</a>
+            </div>
+            </li>
+        </ul>
     """
     news_data = []
     try:
