@@ -32,7 +32,6 @@ def scrape_cards():
         link = card["href"].strip() if "href" in card.attrs else "No Link"
         data.append({"Title": title, "Link": link})
 
-    # Save data to a CSV file
     df = pd.DataFrame(data)
     csv_path = "itineraries_cards.csv"
     df.to_csv(csv_path, index=False, encoding='utf-8')
@@ -44,24 +43,15 @@ def explore_dataset(csv_path):
     try:
         df = pd.read_csv(csv_path)
 
-        # Show the first few records
         print("\n--- First Few Records ---")
         print(df.head())
-
-        # Calculate the size and dimensions of the dataset
         print("\n--- Dataset Size and Dimensions ---")
         print(f"Rows: {df.shape[0]}, Columns: {df.shape[1]}")
-
-        # Identify missing data
         print("\n--- Missing Data ---")
         print(df.isnull().sum())
     except Exception as e:
         print(f"Error exploring dataset: {e}")
 
-# Main function
 if __name__ == "__main__":
-    # Step 1: Scrape data and save to CSV
     csv_path = scrape_cards()
-    
-    # Step 2: Perform basic dataset exploration
     explore_dataset(csv_path)
