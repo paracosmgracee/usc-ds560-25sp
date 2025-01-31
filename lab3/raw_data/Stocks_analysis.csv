@@ -1,0 +1,10 @@
+id,name,ticker,sector,industry,pe_ratio,pb_ratio,de_ratio,roe,eps,dividend_yield
+1,Apple Inc.,AAPL,Technology,Consumer Electronics,37.97,63.49,209.06,1.57,6.30,0.00
+2,NVIDIA Corporation,NVDA,Technology,Semiconductors,49.43,71.71,17.22,1.24,2.53,0.00
+3,Microsoft Corporation,MSFT,Technology,Software - Infrastructure,33.73,11.59,33.66,0.36,12.41,0.01
+4,Tesla, Inc.,TSLA,Consumer Cyclical,Auto Manufacturers,204.85,19.16,18.08,0.20,2.04,0.00
+5,Amazon.com, Inc.,AMZN,Consumer Cyclical,Internet Retail,51.30,9.72,61.18,0.23,4.67,0.00
+6,Alphabet Inc.,GOOGL,Communication Services,Internet Content & Information,27.16,7.99,9.32,0.32,7.53,0.00
+7,Intel Corporation,INTC,Technology,Semiconductors,0.00,0.87,47.91,-0.16,-4.38,0.02
+8,Cisco Systems, Inc.,CSCO,Technology,Communication Equipment,26.24,5.39,70.65,0.21,2.33,0.03
+9,Adobe Inc.,ADBE,Technology,Software - Infrastructure,35.69,13.49,41.79,0.35,12.35,0.00
