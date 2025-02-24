@@ -1,0 +1,12 @@
+PyPDF2 
+PyTesseract 
+requests 
+selenium 
+beautifulsoup4 
+mysql-connector-python 
+pdf2image
+PyMuPDF
+psutil
+pandas
+pymysql
+tqdm
