@@ -1,0 +1,10 @@
+streamlit
+python-dotenv
+PyPDF2
+langchain>=0.1.0
+faiss-cpu
+openai
+sentence-transformers
+llama-cpp-python>=0.2.24
+html5lib
+numpy
