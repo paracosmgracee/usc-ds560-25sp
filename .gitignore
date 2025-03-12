@@ -1,0 +1,14 @@
+# Ignore model files
+lab9/models/
+*.gguf
+
+# Ignore temporary folders
+lab9/temp_pdfs/
+lab9/__pycache__/
+
+# Ignore virtual environments
+lab9/venv/
+.env/
+
+# macOS system files
+.DS_Store
