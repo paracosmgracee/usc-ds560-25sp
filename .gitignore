@@ -3,8 +3,12 @@ lab9/models/
 *.gguf
 
 # Ignore temporary folders
-lab9/temp_pdfs/
 lab9/__pycache__/
+
+# Ignore all PDF and CSV files
+*.pdf
+*.csv
+*.docx
 
 # Ignore virtual environments
 lab9/venv/
