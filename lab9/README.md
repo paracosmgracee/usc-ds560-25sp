@@ -16,7 +16,7 @@ This project builds a Q&A chatbot that allows users to upload PDF documents and 
 lab9/
 ├── scripts/
 │   └── app_p1.py
-├── htmlTemplates.py
+│   └── htmlTemplates.py
 ├── models/
 │   └── llama-2-7b-chat.Q4_K_M.gguf
 ├── temp_pdfs/
